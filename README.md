@@ -30,3 +30,15 @@ Run the image:
 
     docker run SHA
     docker run docker_knowledge_ping
+
+## Using docker-compose
+
+* Change hostname in Dockerfile-ping
+
+Build all images:
+
+    docker-compose build
+
+Start whole application:
+
+    docker-compose up
