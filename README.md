@@ -18,3 +18,15 @@ Send request:
     curl http://192.168.99.100:4567/hello
 
 Note: in my case 192.168.99.100 is the IP of the Docker Machine VM.
+
+## Ping Worker
+
+Build the image:
+
+    docker build . -f Dockerfile-ping
+    docker build . -f Dockerfile-ping -t docker_knowledge_ping
+
+Run the image:
+
+    docker run SHA
+    docker run docker_knowledge_ping

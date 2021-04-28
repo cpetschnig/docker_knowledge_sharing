@@ -1,0 +1,7 @@
+FROM alpine
+
+# Install libraries to run web server
+RUN apk add curl
+
+# Ping server every 2 seconds
+CMD sh -c "while true; do echo 'Ping server: '; curl http://192.168.99.100:4567/hello --silent; sleep 2; echo; done"
